@@ -53,6 +53,26 @@ This project is inspired by [Karan Pratap Singh's Full-Stack Starterkit](https:/
 
 The project is structured as a monorepo with the help of Yarn Workspaces. All the development dependencies are present in the <i>tools</i> package & are hoisted to the root of the project, while runtime dependencies for individual projects are there in respective projects.
 
+```
+monorepo
+├── .husky
+├── packages
+│   ├── common          <--- Common package for shared code
+│   ├── server          <--- NestJS application
+│   ├── tools           <--- All the development dependencies
+│   └── web             <--- Angular application
+├── .eslintignore
+├── .eslintrc.js
+├── .prettierignore
+├── .prettierrc.json
+├── CODE_OF_CONDUCT.md
+├── LICENSE
+├── README.md
+├── tsconfig.json
+├── yarn.lock
+└── package.json
+```
+
 #### <a id="server">Server</a>
 
 Here is the folder structure for `server`, it uses [NestJS](https://nestjs.com/) for the backend services, providing API endpoints for the front-end application.
@@ -92,13 +112,11 @@ web
 
 **Install dependencies**
 
-I recommend using `yarn` instead of `npm` as this project heavily uses `yarn workspaces`
+I recommend using `yarn` instead of `npm` as this project heavily uses `yarn workspaces`. All the project dependencies are hoisted to the root & will be automatically downloaded. A prepare script will build common's package required by both `web` & `server` along with setting up husky's pre-commit hook.
 
 ```
 yarn
 ```
-
-<i>To install dependencies for `web` and `server` automatically, a prepare script has been added in the main `package.json` that will build the common library files as well</i>
 
 **Running server**
 
