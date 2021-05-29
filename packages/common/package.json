@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo/common",
+  "description": "A common package for Angular & NestJS project",
+  "author": {
+    "name": "Shubham Chawla",
+    "url": "https://www.linkedin.com/in/shubham1chawla/"
+  },
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  }
+}

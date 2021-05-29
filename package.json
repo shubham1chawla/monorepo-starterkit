@@ -1,0 +1,28 @@
+{
+  "name": "monorepo",
+  "description": "A Fullstack Starter kit for Angular & NestJS project",
+  "author": {
+    "name": "Shubham Chawla",
+    "url": "https://www.linkedin.com/in/shubham1chawla/"
+  },
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install && cd packages/common & yarn build",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start:web": "cd packages/web & yarn start",
+    "start:server": "cd packages/server & yarn start --watch",
+    "clean": "rm -rf node_modules && rm -rf packages/**/{node_modules,dist}"
+  },
+  "lint-staged": {
+    "*.{js,ts,scss,html}": [
+      "yarn lint:check",
+      "yarn format:check"
+    ]
+  }
+}
