@@ -3,4 +3,4 @@
 
 echo "🕒 Running lint-staged from root..."
 yarn lint-staged
-echo "✔️ lint-staged ran completed!"
+echo "✔️ Completed lint-staged!"
