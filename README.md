@@ -1,5 +1,6 @@
 # Angular + NestJS Full-Stack Monorepo Starterkit
 
+<p align="left">
 <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg" />
 <img alt="Contributions Welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" />
@@ -32,6 +33,7 @@ This project is inspired by [Karan Pratap Singh's Full-Stack Starterkit](https:/
 
 ### :rocket: Technologies Used
 
+<p align="left">
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt='Typescript' width='auto' height='48px'>
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt='Angular' width='auto'  height='48px'>
 <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt='NestJS' width='auto'  height='48px'>
