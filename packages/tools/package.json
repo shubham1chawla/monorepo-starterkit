@@ -5,6 +5,13 @@
     "name": "Shubham Chawla",
     "url": "https://www.linkedin.com/in/shubham1chawla/"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham1chawla/monorepo-starterkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shubham1chawla/monorepo-starterkit/issues"
+  },
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
